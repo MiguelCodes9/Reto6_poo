@@ -1,5 +1,5 @@
 import math
-#En general en la mayoria de clases es poco probable de que hayan exepciones 
+#En general en la mayoria de clases es poco probable de que hayan excepciones 
 #Tal vez si hallan en la parte de las divisiones como en las clases de los triangulos y depronto en las entradas 
 class Point:
     def __init__(self, x:int, y:int ):
@@ -243,10 +243,10 @@ class RectTriangle(Triangle):
         except ZeroDivisionError as e:
             raise ZeroDivisionError(f"Error en triángulo rectángulo: {e}")
 
-#Aqui se ejemplifican todas las clases con valores fijos
+
 if __name__ == "__main__":
-    #Para imprimir es muy parecido, solamente hay que llamar la variable y funcion especifica
-    #Puse exepciones aqui para abajo para capturar cualquier erro que pueda haber 
+
+    #Puse exepciones aqui para abajo para capturar cualquier error que pueda haber 
     print("----------|FUNCIONAMIENTO DE LAS CLASES|----------")
     
     try:
@@ -339,4 +339,5 @@ if __name__ == "__main__":
         print(" Angulo =", Triangulo4.compute_inner_angles())
         print("¿Es regular?", Triangulo4.get_is_regular())
     except Exception as e:
+
         print(f" Error en triángulo rectángulo: {e}\n")
